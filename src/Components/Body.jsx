@@ -9,11 +9,11 @@ import { addBooks } from '../store/bookSlice'
 
 const Body = () => {
   
-     const dispatch =  useDispatch()
+    const dispatch =  useDispatch()
 
-  const addBookDataToStore = () => {
+
+       const addBookDataToStore = () => {
     dispatch(addBooks(bookData))
-    console.log("call")
   }
 
   

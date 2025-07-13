@@ -8,7 +8,9 @@ const bookData = [
     author: "James Clear",
     published_date: "2018-10-16",
     publisher: "Penguin Group USA",
-    overview: "A practical guide on how tiny daily habits can lead to remarkable results over time."
+    overview: "A practical guide on how tiny daily habits can lead to remarkable results over time.",
+    stocks: 25,
+    price: 499
   },
   {
     id: 2,
@@ -16,7 +18,9 @@ const bookData = [
     author: "Mel Robbins",
     published_date: "2024-12-24",
     publisher: "Random House",
-    overview: "A self‑help book offering a universal tool for personal transformation."
+    overview: "A self‑help book offering a universal tool for personal transformation.",
+    stocks: 30,
+    price: 599
   },
   {
     id: 3,
@@ -24,7 +28,9 @@ const bookData = [
     author: "Suzanne Collins",
     published_date: "2025-03-18",
     publisher: "Scholastic Books",
-    overview: "The newest Hunger Games novel that achieved the series’ best ever opening, continuing its dystopian saga." 
+    overview: "The newest Hunger Games novel that achieved the series’ best ever opening, continuing its dystopian saga.",
+    stocks: 45,
+    price: 799
   },
   {
     id: 4,
@@ -32,7 +38,9 @@ const bookData = [
     author: "Taylor Jenkins Reid",
     published_date: "2025",
     publisher: "Ballantine",
-    overview: "A contemporary romance exploring love, choice, and destiny."
+    overview: "A contemporary romance exploring love, choice, and destiny.",
+    stocks: 20,
+    price: 499
   },
   {
     id: 5,
@@ -40,7 +48,9 @@ const bookData = [
     author: "Brad Thor",
     published_date: "2025",
     publisher: "Atria/Bestler",
-    overview: "A high‑stakes political thriller featuring espionage and action."
+    overview: "A high‑stakes political thriller featuring espionage and action.",
+    stocks: 15,
+    price: 699
   },
   {
     id: 6,
@@ -48,7 +58,9 @@ const bookData = [
     author: "Stephen King",
     published_date: "2025",
     publisher: "Scribner",
-    overview: "A horror‑thriller that delves into suspense and psychological fear."
+    overview: "A horror‑thriller that delves into suspense and psychological fear.",
+    stocks: 12,
+    price: 749
   },
   {
     id: 7,
@@ -56,7 +68,9 @@ const bookData = [
     author: "Freida McFadden",
     published_date: "2022-04",
     publisher: "Bookouture",
-    overview: "A psychological thriller where a live‑in maid uncovers dark secrets in a wealthy Long Island household." 
+    overview: "A psychological thriller where a live‑in maid uncovers dark secrets in a wealthy Long Island household.",
+    stocks: 40,
+    price: 449
   },
   {
     id: 8,
@@ -64,7 +78,9 @@ const bookData = [
     author: "Evie Woods",
     published_date: "2023-06-22",
     publisher: "One More Chapter (HarperCollins)",
-    overview: "A magical‑realist story celebrating bibliophilia while addressing alcoholism, domestic violence, and misogyny." 
+    overview: "A magical‑realist story celebrating bibliophilia while addressing alcoholism, domestic violence, and misogyny.",
+    stocks: 18,
+    price: 399
   },
   {
     id: 9,
@@ -72,7 +88,9 @@ const bookData = [
     author: "Chris Kyle, Scott McEwen & Jim DeFelice",
     published_date: "2012-01-02",
     publisher: "William Morrow and Company",
-    overview: "Autobiography of a US Navy SEAL sniper; spent 37 weeks on NYT best‑seller list."
+    overview: "Autobiography of a US Navy SEAL sniper; spent 37 weeks on NYT best‑seller list.",
+    stocks: 50,
+    price: 699
   },
   {
     id: 10,
@@ -80,7 +98,9 @@ const bookData = [
     author: "Evan Friss",
     published_date: "2024-08-06",
     publisher: "Viking Press",
-    overview: "Narrative history of independent US bookstores, profiling iconic shops and industry trends."
+    overview: "Narrative history of independent US bookstores, profiling iconic shops and industry trends.",
+    stocks: 22,
+    price: 599
   },
   {
     id: 11,
@@ -88,7 +108,9 @@ const bookData = [
     author: "Deepti Kapoor",
     published_date: "2023-01-03",
     publisher: "HarperCollins",
-    overview: "A Delhi‑set thriller exploring wealth, violence and power through a gripping family saga." 
+    overview: "A Delhi‑set thriller exploring wealth, violence and power through a gripping family saga.",
+    stocks: 28,
+    price: 649
   },
   {
     id: 12,
@@ -96,7 +118,9 @@ const bookData = [
     author: "Rebecca Yarros",
     published_date: "2025-01-21",
     publisher: "Macmillan",
-    overview: "Romantasy novel combining romance and fantasy elements; topped 2025 print sales charts." 
+    overview: "Romantasy novel combining romance and fantasy elements; topped 2025 print sales charts.",
+    stocks: 10,
+    price: 999
   },
   {
     id: 13,
@@ -104,7 +128,9 @@ const bookData = [
     author: "Rebecca Yarros",
     published_date: "2024-09-17",
     publisher: "Macmillan",
-    overview: "First in the bestselling fantastical romantasy series by Yarros."
+    overview: "First in the bestselling fantastical romantasy series by Yarros.",
+    stocks: 35,
+    price: 799
   },
   {
     id: 14,
@@ -112,7 +138,9 @@ const bookData = [
     author: "Rebecca Yarros",
     published_date: "2023-11-07",
     publisher: "Macmillan",
-    overview: "Sequel in the romantasy series, continuing its dominance in fantasy‑romance."
+    overview: "Sequel in the romantasy series, continuing its dominance in fantasy‑romance.",
+    stocks: 42,
+    price: 849
   },
   {
     id: 15,
@@ -120,8 +148,12 @@ const bookData = [
     author: "Jonathan Haidt",
     published_date: "2025",
     publisher: "Penguin",
-    overview: "Explores impacts of reduced free play and smartphone use on childhood health and mental wellbeing."
+    overview: "Explores impacts of reduced free play and smartphone use on childhood health and mental wellbeing.",
+    stocks: 16,
+    price: 549
   }
-] 
+];
+
+
 
 export default bookData

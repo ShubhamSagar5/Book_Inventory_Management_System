@@ -22,7 +22,7 @@ function App() {
           element:<FeedPage/>
         },
         {
-          path:"/deatil/:id",
+          path:"/detail/:id",
           element:<DetailPage/>
         },
         {
