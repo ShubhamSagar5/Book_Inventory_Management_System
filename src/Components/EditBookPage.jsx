@@ -53,7 +53,7 @@ const EditBookPage = () => {
     />
   </div>
 <div className="w-full  md:w-5/12">
-  <button className="bg-blue-600 mt-2 w-full text-white font-semibold px-4 py-2 rounded hover:bg-blue-700">
+  <button className="bg-blue-600 mt-5 w-full text-white font-semibold px-4 py-2 rounded hover:bg-blue-700">
     Update Book
   </button>
 </div>
