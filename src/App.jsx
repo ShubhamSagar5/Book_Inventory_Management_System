@@ -9,6 +9,8 @@ import DetailPage from './Components/DetailPage'
 import { Provider } from 'react-redux'
 import appStore from './store/appStore'
 import EditBookPage from './Components/EditBookPage'
+  import { ToastContainer } from 'react-toastify';
+
 
 function App() {
   
@@ -22,7 +24,7 @@ function App() {
           element:<FeedPage/>
         },
         {
-          path:"/detail/:BookId",
+          path:"/detail/:bookId",
           element:<DetailPage/>
         },
         {
@@ -42,7 +44,7 @@ function App() {
     <> 
     <Provider store={appStore}>
     <RouterProvider router={appRouter}/>
-
+    <ToastContainer position="top-center" autoClose={2000}/>
     </Provider>
     </>
   )

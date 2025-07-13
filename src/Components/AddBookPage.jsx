@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addSingleNewBook } from "../store/bookSlice";
 import { v4 as uuidv4 } from 'uuid';
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 
 
 const AddBookPage = () => {
   
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const [bookDetails,setBookDetails] = useState({
     title:"",
@@ -34,9 +37,14 @@ const AddBookPage = () => {
       id:uuidv4()
     }
     dispatch(addSingleNewBook(newBook))
-    console.log(newBook)
+    toast.success("Book added!")
+    navigate("/")
   }
 
+   useEffect(()=>{
+      window.scrollTo(0,0) 
+  
+    },[])
 
   
   return (

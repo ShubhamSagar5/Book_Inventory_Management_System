@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { getSingleBook, updateBookDetails } from '../store/bookSlice'
+import { toast } from 'react-toastify'
 
 const EditBookPage = () => {
   
   const {bookId} = useParams()
   const dispatch = useDispatch()
+
+  const navigate = useNavigate()
+
   const getAllBooks = useSelector((store)=>store.booksData?.books) 
     const getBook = getAllBooks.filter((book)=>book.id == bookId)
-  console.log(getBook[0])
+
 
 
  
@@ -41,9 +45,14 @@ const EditBookPage = () => {
       id:bookId
     }
     dispatch(updateBookDetails(newBook))
-    console.log(newBook)
+    toast.info("Book Updated")
+    navigate("/")
   }
 
+   useEffect(()=>{
+      window.scrollTo(0,0) 
+  
+    },[])
   
   return (
     

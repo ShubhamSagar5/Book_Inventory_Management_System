@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { deleteBook } from '../store/bookSlice'
+import { toast } from 'react-toastify'
 
 const BookListTable = () => {
   
@@ -12,7 +13,13 @@ const BookListTable = () => {
 
     const handleDelete = (bookId) => {
         dispatch(deleteBook(bookId))
+        toast.success("Book Deleted")
     }
+
+     useEffect(()=>{
+        window.scrollTo(0,0) 
+    
+      },[])
   
     return (
          <div className='min-h-screen md:p-5'>
