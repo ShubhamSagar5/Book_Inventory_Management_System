@@ -40,6 +40,18 @@ const EditBookPage = () => {
   }
   
   const handleUpdateBook = () => {
+    
+     let {title,author,publisher,overview,stocks,price,published_date} = bookDetails
+        
+        if(!title || !author || !publisher || !overview || !published_date || !stocks || !price){
+          toast.error("All fields Required!")
+          return
+        }
+        if(stocks < 0 || price < 0){
+          toast.error("Please fill Stocks and Price correctly")
+          return
+        }
+    
     let newBook = {
       ...bookDetails,
       id:bookId
@@ -83,12 +95,12 @@ const EditBookPage = () => {
     <div className="md:flex md:justify-between">
        <div className="w-full md:w-5/12">
       <label htmlFor="stocks" className="font-medium mb-1">Stocks</label>
-      <input type="number" name="stocks" id="stocks" onChange={handleData} value={bookDetails.stocks} className="w-full border border-gray-300 rounded px-3 py-2" />
+      <input type="number" name="stocks" min="0" id="stocks" onChange={handleData} value={bookDetails.stocks} className="w-full border border-gray-300 rounded px-3 py-2" />
     </div>
 
     <div className="w-full md:w-5/12">
       <label htmlFor="price" className="font-medium mb-1">Price</label>
-      <input type="number" name="price" id="price" onChange={handleData} value={bookDetails.price} className="w-full border border-gray-300 rounded px-3 py-2" />
+      <input type="number" name="price" min="0" id="price" onChange={handleData} value={bookDetails.price} className="w-full border border-gray-300 rounded px-3 py-2" />
     </div>
     </div>
    

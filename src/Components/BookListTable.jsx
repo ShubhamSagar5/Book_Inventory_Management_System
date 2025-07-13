@@ -21,7 +21,9 @@ const BookListTable = () => {
     
       },[])
   
-    return (
+
+
+    return books.length > 0 ?  (
          <div className='min-h-screen md:p-5'>
       <div className="overflow-x-auto"> 
       <table className='w-full text-center border border-gray-300'>
@@ -57,6 +59,11 @@ const BookListTable = () => {
     </div>
    
    </div>
+  ) : (
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
+    <h2 className="text-xl font-semibold text-gray-700 mb-2">No Books Available</h2>
+    <p className="text-gray-500 mb-4">Please add a book to get started.</p>
+  </div>
   )
 }
 

@@ -5,10 +5,10 @@ import { useParams } from 'react-router-dom'
 const DetailPage = () => {
   
   const {bookId} = useParams() 
-  console.log(bookId)
+  // console.log(bookId)
   const getAllBooks = useSelector((store) =>store.booksData?.books)
   const [book] = getAllBooks.filter((book)=>book.id ==bookId)
-  console.log(book)
+  // console.log(book)
   
   useEffect(()=>{
     window.scrollTo(0,0) 
