@@ -4,10 +4,11 @@ import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Body from './Components/Body'
 import FeedPage from './Components/FeedPage'
-import AddEditPage from './Components/AddEditPage'
+import AddBookPage from './Components/AddBookPage'
 import DetailPage from './Components/DetailPage'
 import { Provider } from 'react-redux'
 import appStore from './store/appStore'
+import EditBookPage from './Components/EditBookPage'
 
 function App() {
   
@@ -25,8 +26,12 @@ function App() {
           element:<DetailPage/>
         },
         {
-          path:"/addEdit/:id",
-          element:<AddEditPage/>
+          path:"/addNewBook",
+          element:<AddBookPage/>
+        },
+        {
+          path:"/edit/:id",
+          element:<EditBookPage/>
         }
       ]
     }

@@ -3,7 +3,7 @@ import bookSliceReducer from './bookSlice'
 
 const appStore = configureStore({
     reducer:{
-        books:bookSliceReducer
+        booksData:bookSliceReducer
     }
 })
 
