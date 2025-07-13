@@ -3,7 +3,7 @@
 
 const bookData = [
   {
-    id: 1,
+    id: "1",
     title: "Atomic Habits",
     author: "James Clear",
     published_date: "2018-10-16",
@@ -13,7 +13,7 @@ const bookData = [
     price: 499
   },
   {
-    id: 2,
+    id: "2",
     title: "The Let Them Theory",
     author: "Mel Robbins",
     published_date: "2024-12-24",
@@ -23,7 +23,7 @@ const bookData = [
     price: 599
   },
   {
-    id: 3,
+    id: "3",
     title: "Sunrise on the Reaping",
     author: "Suzanne Collins",
     published_date: "2025-03-18",
@@ -33,7 +33,7 @@ const bookData = [
     price: 799
   },
   {
-    id: 4,
+    id: "4",
     title: "Atmosphere: A Love Story",
     author: "Taylor Jenkins Reid",
     published_date: "2025",
@@ -43,7 +43,7 @@ const bookData = [
     price: 499
   },
   {
-    id: 5,
+    id: "5",
     title: "Edge of Honor",
     author: "Brad Thor",
     published_date: "2025",
@@ -53,7 +53,7 @@ const bookData = [
     price: 699
   },
   {
-    id: 6,
+    id: "6",
     title: "Never Flinch",
     author: "Stephen King",
     published_date: "2025",
@@ -63,7 +63,7 @@ const bookData = [
     price: 749
   },
   {
-    id: 7,
+    id: "7",
     title: "The Housemaid",
     author: "Freida McFadden",
     published_date: "2022-04",
@@ -73,7 +73,7 @@ const bookData = [
     price: 449
   },
   {
-    id: 8,
+    id: "8",
     title: "The Lost Bookshop",
     author: "Evie Woods",
     published_date: "2023-06-22",
@@ -83,7 +83,7 @@ const bookData = [
     price: 399
   },
   {
-    id: 9,
+    id: "9",
     title: "American Sniper",
     author: "Chris Kyle, Scott McEwen & Jim DeFelice",
     published_date: "2012-01-02",
@@ -93,7 +93,7 @@ const bookData = [
     price: 699
   },
   {
-    id: 10,
+    id: "10",
     title: "The Bookshop: A History of the American Bookstore",
     author: "Evan Friss",
     published_date: "2024-08-06",
@@ -103,7 +103,7 @@ const bookData = [
     price: 599
   },
   {
-    id: 11,
+    id: "11",
     title: "Age of Vice",
     author: "Deepti Kapoor",
     published_date: "2023-01-03",
@@ -113,7 +113,7 @@ const bookData = [
     price: 649
   },
   {
-    id: 12,
+    id: "12",
     title: "Onyx Storm (Deluxe Limited Edition)",
     author: "Rebecca Yarros",
     published_date: "2025-01-21",
@@ -123,7 +123,7 @@ const bookData = [
     price: 999
   },
   {
-    id: 13,
+    id: "13",
     title: "Fourth Wing",
     author: "Rebecca Yarros",
     published_date: "2024-09-17",
@@ -133,7 +133,7 @@ const bookData = [
     price: 799
   },
   {
-    id: 14,
+    id: "14",
     title: "Iron Flame",
     author: "Rebecca Yarros",
     published_date: "2023-11-07",
@@ -143,7 +143,7 @@ const bookData = [
     price: 849
   },
   {
-    id: 15,
+    id: "15",
     title: "The Anxious Generation",
     author: "Jonathan Haidt",
     published_date: "2025",

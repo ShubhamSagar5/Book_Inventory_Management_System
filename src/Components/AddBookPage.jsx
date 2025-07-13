@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addSingleNewBook } from "../store/bookSlice";
+import { v4 as uuidv4 } from 'uuid';
+
+
 
 const AddBookPage = () => {
   
   const dispatch = useDispatch()
 
   const [bookDetails,setBookDetails] = useState({
-    id:"",
     title:"",
     author:"",
     publisher:"",
@@ -27,8 +29,12 @@ const AddBookPage = () => {
   }
 
   const handleAddBook = () => {
-    dispatch(addSingleNewBook(bookDetails))
-    console.log(bookDetails)
+    let newBook = {
+      ...bookDetails,
+      id:uuidv4()
+    }
+    dispatch(addSingleNewBook(newBook))
+    console.log(newBook)
   }
 
 
@@ -75,7 +81,7 @@ const AddBookPage = () => {
     </div>
 
    <div className="md:flex md:justify-between md:items-center">
-  <div div className="w-full md:w-5/12">
+  <div className="w-full md:w-5/12">
     <label htmlFor="published_date" className="font-medium mb-1">Published Date</label>
     <input
       type="date"

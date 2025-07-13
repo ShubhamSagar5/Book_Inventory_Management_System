@@ -22,7 +22,7 @@ function App() {
           element:<FeedPage/>
         },
         {
-          path:"/detail/:id",
+          path:"/detail/:BookId",
           element:<DetailPage/>
         },
         {
@@ -30,7 +30,7 @@ function App() {
           element:<AddBookPage/>
         },
         {
-          path:"/edit/:id",
+          path:"/edit/:bookId",
           element:<EditBookPage/>
         }
       ]
